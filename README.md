@@ -1,6 +1,7 @@
-# Unreleased.me
+# unreleased.me
 
-The site now includes a local Python and SQLite backend for accounts, sessions, invite codes, profile pictures, comments, and forum posts.
+New website for the old unreleased.me, heavily WIP
+Contact me on discord for any inquires @falloutofheaven
 
 ## Start the site
 
