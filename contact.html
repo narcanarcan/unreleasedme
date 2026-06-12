@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Unreleased.me." />
+    <title>Contact | unreleased.me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-page contact-page">
+      <section class="form-panel">
+        <div class="form-wrap">
+          <a class="form-brand" href="index.html" aria-label="Unreleased.me home">
+            <img src="assets/unreleased-logo.png" alt="Unreleased.me" />
+          </a>
+
+          <div class="form-heading">
+            <p class="form-heading__kicker">Get in touch</p>
+            <h1>Contact us</h1>
+            <p>Choose the best place to reach us.</p>
+          </div>
+
+          <div class="contact-options">
+            <a class="contact-button contact-button--discord" href="https://discord.gg/4EZWnXbHEE" target="_blank" rel="noopener noreferrer">
+              <span class="contact-image-icon" aria-hidden="true">
+                <img src="assets/discord-logo.png" alt="" />
+              </span>
+              <span>Discord</span>
+              <svg class="contact-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+            </a>
+
+            <a class="contact-button contact-button--reddit" href="https://www.reddit.com/r/UnreleasedDisco/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-image-icon contact-image-icon--reddit" aria-hidden="true">
+                <img src="assets/reddit-logo.png" alt="" />
+              </span>
+              <span>Reddit</span>
+              <svg class="contact-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+            </a>
+
+            <button class="contact-button contact-button--email" type="button" aria-expanded="false" aria-controls="contact-email-display">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+              </svg>
+              <span>Email</span>
+              <svg class="contact-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+            </button>
+          </div>
+
+          <div class="contact-email-display" id="contact-email-display" hidden>
+            <span>Email us at</span>
+            <a href="mailto:unreleaseddotme@gmail.com">unreleaseddotme@gmail.com</a>
+          </div>
+
+          <a class="page-back-link" href="index.html">Back to home</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

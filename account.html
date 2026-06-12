@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Manage your Unreleased.me account." />
+    <title>Account | Unreleased.me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-page">
+      <header class="site-header">
+        <a class="site-logo" href="index.html" aria-label="Unreleased.me landing page">
+          <img src="assets/unreleased-logo.png" alt="Unreleased.me" />
+        </a>
+
+        <nav class="site-tabs" aria-label="Main navigation">
+          <a href="home.html">Home</a>
+          <a href="search.html">Search</a>
+          <a href="forum.html">Forum</a>
+          <a href="wiki.html">Wiki</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="account-link is-active" href="account.html" aria-current="page">
+          <span>Account</span>
+          <span class="profile-placeholder" aria-hidden="true"></span>
+        </a>
+      </header>
+
+      <div class="account-subbar">
+        <section class="account-user-summary" aria-label="Current user">
+          <span class="account-avatar" aria-hidden="true"></span>
+          <div>
+            <p class="site-placeholder__label">Account</p>
+            <h1 id="profile-username">Guest</h1>
+            <p id="profile-email">No email connected</p>
+          </div>
+        </section>
+
+        <div class="clock-widget" aria-label="Current local time">
+          <span class="analog-clock" aria-hidden="true">
+            <span class="clock-hand clock-hand--hour"></span>
+            <span class="clock-hand clock-hand--minute"></span>
+            <span class="clock-hand clock-hand--second"></span>
+            <span class="clock-center"></span>
+          </span>
+          <time class="digital-time" datetime="">--:--:--</time>
+        </div>
+      </div>
+
+      <section class="account-page" aria-label="Account activity">
+        <div class="account-activity-grid">
+          <section class="activity-panel" aria-labelledby="comments-title">
+            <div class="activity-panel__heading">
+              <p class="site-placeholder__label">Activity</p>
+              <h2 id="comments-title">Comments</h2>
+            </div>
+            <div class="activity-list" id="account-comments-list"></div>
+          </section>
+
+          <section class="activity-panel" aria-labelledby="posts-title">
+            <div class="activity-panel__heading">
+              <p class="site-placeholder__label">Forum</p>
+              <h2 id="posts-title">Posts</h2>
+            </div>
+            <div class="activity-list" id="account-posts-list"></div>
+          </section>
+        </div>
+
+        <div class="account-actions account-page-actions">
+          <a class="account-action account-action--primary" href="edit-profile.html">Edit profile</a>
+          <button class="account-action" id="sign-out" type="button">Sign out</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="site-clock.js"></script>
+    <script src="account.js"></script>
+  </body>
+</html>

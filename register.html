@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Register for access to Unreleased.me."
+    />
+    <title>Register | unreleased.me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-page register-page">
+      <section class="form-panel">
+        <div class="form-wrap">
+          <a class="form-brand" href="index.html" aria-label="Unreleased.me home">
+            <img src="assets/unreleased-logo.png" alt="Unreleased.me" />
+          </a>
+
+          <div class="form-heading">
+            <p class="form-heading__kicker">Join the community</p>
+            <h1>Create your account</h1>
+            <p>Enter your details and invite code to request access.</p>
+          </div>
+
+          <form id="register-form" novalidate>
+            <div class="field">
+              <label for="username">Username</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4.5 20a7.5 7.5 0 0 1 15 0" />
+                </svg>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Choose a username"
+                  autocomplete="username"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <span class="field-error" id="username-error">Username must be at least 3 characters.</span>
+            </div>
+
+            <div class="field">
+              <label for="register-email">Email address</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+                </svg>
+                <input
+                  id="register-email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <span class="field-error" id="register-email-error">Enter a valid email address.</span>
+            </div>
+
+            <div class="field">
+              <label for="register-password">Password</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="10" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                </svg>
+                <input
+                  id="register-password"
+                  name="password"
+                  type="password"
+                  placeholder="At least 8 characters"
+                  autocomplete="new-password"
+                  minlength="8"
+                  maxlength="128"
+                  required
+                />
+              </div>
+              <span class="field-error" id="register-password-error">Password must be at least 8 characters.</span>
+            </div>
+
+            <div class="field">
+              <label for="confirm-password">Confirm password</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="10" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                </svg>
+                <input
+                  id="confirm-password"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Repeat your password"
+                  autocomplete="new-password"
+                  minlength="8"
+                  maxlength="128"
+                  required
+                />
+              </div>
+              <span class="field-error" id="confirm-password-error">Passwords must match.</span>
+            </div>
+
+            <div class="field invite-field">
+              <label for="invite-code">Invite code</label>
+              <div class="input-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 7.5A1.5 1.5 0 0 1 5.5 6h13A1.5 1.5 0 0 1 20 7.5V9a3 3 0 0 0 0 6v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 16.5V15a3 3 0 0 0 0-6V7.5Z" />
+                  <path d="M12 8v2M12 14v2" />
+                </svg>
+                <input
+                  id="invite-code"
+                  name="inviteCode"
+                  type="text"
+                  placeholder="Enter your invite code"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <span class="field-error" id="invite-code-error">Enter your invite code.</span>
+              <p class="invite-note">Don't have an <a href="wiki.html">invite code</a>?</p>
+            </div>
+
+            <button class="submit-button" type="submit">
+              <span>Register</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+            </button>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="register-area">
+            <span>Already have an account?</span>
+            <a class="register-button" href="login.html">Sign in</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="register.js"></script>
+  </body>
+</html>
